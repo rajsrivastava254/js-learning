@@ -19,3 +19,30 @@ let isLogged = true
 console.log(typeof "hello")
 console.log(typeof null)
 console.log(typeof undefined)
+
+//two types of datatypes 1.. Premitive and 2..non premitive
+//premitive are call by value
+//non premitive are call by refernce
+
+const id = Symbol('123') //symbol is datatype use to store unique ID
+const anotherId = Symbol('123')
+console.log(id===anotherId); //so it result false
+
+//non-premitive dataType array,objects,functions
+
+const arr = ["abc","def","ghi"]
+let obj = {
+    name:"Raj",
+    age:"12",
+}
+
+let myFunc = function(){
+    console.log("Hello World");
+    
+}
+console.log(typeof arr); //return object
+console.log(typeof obj);
+console.log(myFunc); //object function
+
+
+
